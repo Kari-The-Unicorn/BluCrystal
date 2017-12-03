@@ -2,6 +2,28 @@
 body {
   padding-top: 3.5rem;
 }
+.navbar-fixed-top{
+  height: 80px;
+  background-color: lightgray;
+  border: 1px solid grey;
+  }
+  .logoImg{
+ /* height: 35%;
+width: 35%;*/
+  max-width: 40%;
+  display: block;
+}
+.navbar-brand{
+  height: 229px;
+  width: 220px;
+}
+.navbar-nav{
+  text-align: right;
+margin-left: 20px;
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+color: black !important;
+}
 .team_gallery {
   /* width: 100%;
   height: auto;*/

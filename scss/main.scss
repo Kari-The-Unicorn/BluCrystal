@@ -1,3 +1,81 @@
+$app-color: (
+      primary: black,
+      secondary: gray,
+      neutral: #343a40,
+noColor: white,
+required: green,
+darkGray: #777,
+lightGray: #f7f7f7
+);
 body {
-    background-color: red;
+padding-top: 3.5rem;
   }
+.navbar-fixed-top{
+height: 80px;
+background-color: map-get($app-color, darkGray);
+}
+.logoImg{
+  max-width: 40%;
+display: block;
+}
+.navbar-brand{
+height: 229px;
+width: 220px;
+}
+.navbar-nav{
+text-align: right;
+margin-left: 20px;
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+}
+.team_gallery {
+height: 229px;
+width: 220px;
+border-radius: 10px;
+}
+.jumbotron {
+background-color: lightgrey;
+color: black;
+padding: 50px 25px;
+font-family: Montserrat, sans-serif;
+}
+.input-group{ 
+width: 40%;
+float: right;
+}
+.btn-subscribe{
+color: black;
+background-color: darkcyan;
+}
+.carousel-control
+.right, .carousel-control.left {
+background-image: none;
+color: blue;
+}
+.carousel-indicators li { 
+border-color: blue;
+}
+.carousel-indicators li.active { 
+background-color: map-get($app-color, secondary);
+}
+.carousel-caption{
+color: black;
+font-weight: bold;
+border: 1px solid map-get($app-color, secondary);
+background-color: map-get($app-color, noColor);
+border-radius: 5%;
+width: 30%;
+margin: auto;
+}
+.carousel-inner{ 
+width: auto; 
+height: 200px;
+}
+[class*="devicon"] {
+  font-size: 6rem; 
+font-color: map-get($app-color, secondary);
+}
+.cdraw{
+ width: 6rem;
+height: 6rem;
+}

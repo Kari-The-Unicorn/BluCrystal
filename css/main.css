@@ -6,8 +6,11 @@ body {
 }
 .navbar-fixed-top{
   height: 80px;
-  background-color: rgba(11, 31, 16, 0.445);
-  color: whitesmoke;
+  background-color: rgba(75, 75, 85, 0.445);
+  border-bottom: 1px solid rgba(20, 19, 19, 0.581);
+  }
+  #about_links, #services_links, #portfolio_links, #pricing_links, #contact_links{
+    color: #050542;
   }
   .logoImg{
   max-width: 40%;
@@ -38,7 +41,7 @@ font-weight: 900;
   color: black;
 }
 .col-md-4{
-  background-color: whitesmoke;
+  background-color: #05054238;
   border: 1px solid darkslategray;
   padding-left: 0.8rem;
   width: 20%;
@@ -57,7 +60,7 @@ a {
 }
 .jumbotron {
   background-color: rgba(20, 19, 19, 0.581);
-  color: whitesmoke;
+  color: rgb(11, 68, 90);
   padding: 50px 25px;
   font-family: Montserrat, sans-serif;
 }

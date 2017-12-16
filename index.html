@@ -32,11 +32,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#pricing">PRICING</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#" id="about_links">ABOUT</a></li>
+            <li><a href="#services" id="services_links">SERVICES</a></li>
+            <li><a href="#portfolio" id="portfolio_links">PORTFOLIO</a></li>
+            <li><a href="#pricing" id="pricing_links">PRICING</a></li>
+            <li><a href="#contact" id="contact_links">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -109,7 +109,7 @@
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
   <h2>SERVICES AND TOOLS</h2>
-  <h4>We work using by</h4>
+  <h4>We work using</h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
@@ -131,7 +131,7 @@
         <i class="devicon-sass-original colored"></i>
     </div>
     <div class="col-sm-4">
-        <img src="https://orig00.deviantart.net/e66c/f/2011/132/9/8/coreldraw_c_by_dj_fahr-d3g5o3v.png" class="cdraw">        
+        <img src="images/logo/corel_logo/corel-draw-logo.jpg" class="cdraw">        
     </div>
   </div>
 </div>
@@ -204,8 +204,24 @@
             <h2>Walter Black</h2>
             <p>Executive Director</p>
             <img class = "team_gallery" src="images/team/walter.svg" class="img-rounded" alt="walter_image">
-            <p><a class="btn btn-secondary" href="#" role="button">Read bio &raquo;</a></p>
-          </div>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
+            <div class="container_modal"> 
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Walter Black</h4>
+      </div>
+      <div class="modal-body">
+        <p>Also known as "Heisenburg". A head of the company.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+</div>
+         
           <div class="col-md-4">
             <h2>Skyler Black</h2>
             <p>Chief Director</p>
@@ -225,14 +241,10 @@
     <footer class="container">
       <p>&copy; Blu Crystal Company 2017</p>
     </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>

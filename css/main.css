@@ -3,6 +3,7 @@ body {
   background-image: url("../images/main/smok.jpg");
   color: whitesmoke;
   font-weight: bold;
+  background-size: cover;
 }
 .navbar-fixed-top{
   height: 80px;
@@ -30,8 +31,8 @@ font-weight: 900;
   text-align: center;
 }
 .team_gallery {
-  height: 229px;
-  width: 220px;
+  height: auto;
+  width: 100%;
   border-radius: 0.8rem;
 }
 #portfolio{
@@ -48,16 +49,26 @@ font-weight: 900;
   margin-left: 12rem;
   border-radius: 3%;
   text-align: center;
+  color: whitesmoke;
+}
+.btn-secondary{
+  color: black;
+}
+.modal-content{
   color: black;
 }
 a {
   color: black;
   text-decoration: none;
 }
-.btn btn-secondary{
-  border: 10px solid darkslategray;
+.btn-secondary{
+  border: 2px solid darkslategray;
   padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
 }
+/*.img-fluid{
+  width: 100%/9;
+}*/
 .jumbotron {
   background-color: rgba(20, 19, 19, 0.581);
   color: rgb(11, 68, 90);

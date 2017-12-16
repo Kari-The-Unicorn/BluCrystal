@@ -106,35 +106,7 @@
         </div>
       </div>
       
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES AND TOOLS</h2>
-  <h4>We work using</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-    </div>
-    <div class="col-sm-4">
-        <i class="devicon-html5-plain-wordmark colored"></i>
-    </div>
-    <div class="col-sm-4">
-        <i class="devicon-css3-plain-wordmark colored"></i>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-        <i class="devicon-javascript-plain colored"></i>
-    </div>
-    <div class="col-sm-4">
-        <i class="devicon-sass-original colored"></i>
-    </div>
-    <div class="col-sm-4">
-        <img src="images/logo/corel_logo/corel-draw-logo.jpg" class="cdraw">        
-    </div>
-  </div>
-</div>
+
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>PORTFOLIO</h2><br>
@@ -163,6 +135,35 @@
     </div>
   </div><br>
   
+  <!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES AND TOOLS</h2>
+  <h4>We work using</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+    </div>
+    <div class="col-sm-4">
+        <i class="devicon-html5-plain-wordmark colored"></i>
+    </div>
+    <div class="col-sm-4">
+        <i class="devicon-css3-plain-wordmark colored"></i>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <i class="devicon-javascript-plain colored"></i>
+    </div>
+    <div class="col-sm-4">
+        <i class="devicon-sass-original colored"></i>
+    </div>
+    <div class="col-sm-4">
+        <img src="images/logo/corel_logo/corel-draw-logo.jpg" class="cdraw">        
+    </div>
+  </div>
+</div>
   <h2>Read what our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -225,19 +226,47 @@
           <div class="col-md-4">
             <h2>Skyler Black</h2>
             <p>Chief Director</p>
-            <img class = "team_gallery" src="images/team/skyler.svg" alt="skyler_image">
-            <p><a class="btn btn-secondary" href="#" role="button">Read bio &raquo;</a></p>
-          </div>
+            <img class = "team_gallery" src="images/team/skyler.svg" class="img-rounded" alt="skyler_image">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
+            <div class="container_modal"> 
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Skyler Black</h4>
+      </div>
+      <div class="modal-body">
+        <p>She knows accounting.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+</div>
+
           <div class="col-md-4">
             <h2>Gustavo Blink</Map></h2>
             <p>Sales Director</p>
-            <img class = "team_gallery" src="images/team/gustavo.svg" alt="gustavo_image">
-            <p><a class="btn btn-secondary" href="#" role="button">Read bio &raquo;</a></p>
-          </div>
-        </div>
+            <embed class = "team_gallery" src="images/team/gustavo.svg" alt="gustavo_image"/>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
+            <div class="container_modal"> 
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Gustavo Blink</h4>
       </div>
-    
+      <div class="modal-body">
+        <p>He knows the business model</p>
+      </div>
     </div>
+  </div>
+</div>
+</div> 
+</div>
+</div>
     <footer class="container">
       <p>&copy; Blu Crystal Company 2017</p>
     </footer>

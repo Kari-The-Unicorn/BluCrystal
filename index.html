@@ -15,7 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -35,7 +35,7 @@
             <li><a href="#" id="about_links">ABOUT</a></li>
             <li><a href="#services" id="services_links">SERVICES</a></li>
             <li><a href="#portfolio" id="portfolio_links">PORTFOLIO</a></li>
-            <li><a href="#pricing" id="pricing_links">PRICING</a></li>
+            <li><a href="#comments" id="pricing_links">COMMENTS</a></li>
             <li><a href="#contact" id="contact_links">CONTACT</a></li>
           </ul>
         </div>
@@ -174,7 +174,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" id="comments" role="listbox">
       <div class="item active">
         <h4>"This company is delivering the best practice. I am so happy with the result!"<br><span>Michael Row, Vice President, Commentary</span></h4>
       </div>
@@ -200,44 +200,80 @@
 
       <div class="container">
         <!-- Example row of columns -->
-        <div class="row">
+        <div class="row" id="contact">
           <div class="col-md-4">
             <h2>Walter Black</h2>
             <p>Executive Director</p>
             <img class = "team_gallery" src="images/team/walter.svg" class="img-rounded" alt="walter_image">
             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
             <div class="container_modal"> 
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Walter Black</h4>
-      </div>
-      <div class="modal-body">
-        <p>Also known as "Heisenburg". A head of the company.</p>
-      </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <img class = "team_gallery_micro" src="images/team/walter.svg" class="img-rounded" alt="walter_image">
+                        <h4 class="modal-title">Walter Black</h4>
+                          <div class="left_text_modal"><i class="fa fa-phone-square" aria-hidden="true"> +66 99 21 88 44</i>
+                          </div>        
+                       <div class="left_text_modal"><i class="fa fa-envelope" aria-hidden="true"> walter.black@blucrystal.com</i>
+                         </div>        
+                      </div>
+                      <div class="modal-body_micro">
+                        <p>Also known as "Heisenburg". A head of the Blu Crystal company.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div> 
     </div>
-  </div>
-</div>
-</div> 
-</div>
-         
           <div class="col-md-4">
             <h2>Skyler Black</h2>
             <p>Chief Director</p>
             <img class = "team_gallery" src="images/team/skyler.svg" class="img-rounded" alt="skyler_image">
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal2">Read bio</button>
             <div class="container_modal"> 
-<div class="modal fade" id="myModal" role="dialog">
+                <div class="modal fade" id="myModal2" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <img class = "team_gallery_micro" src="images/team/skyler.svg" class="img-rounded" alt="skyler_image">
+                        <h4 class="modal-title">Skyler Black</h4>
+                          <div class="left_text_modal"><i class="fa fa-phone-square" aria-hidden="true"> +66 99 23 88 44</i>
+                          </div>        
+                       <div class="left_text_modal"><i class="fa fa-envelope" aria-hidden="true"> skyler.black@blucrystal.com</i>
+                       </div>        
+                      </div>
+                      <div class="modal-body_micro">
+                        <p>She knows everything about accounting and financial stuff.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div> 
+    </div>
+
+          <div class="col-md-4">
+            <h2>Gustavo Blink</h2>
+            <p>Sales Director</p>
+            <img class = "team_gallery" src="images/team/gustavo.svg" class="img-rounded" alt="gustavo_image">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal3">Read bio</button>
+            <div class="container_modal"> 
+<div class="modal fade" id="myModal3" role="dialog">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Skyler Black</h4>
+        <img class = "team_gallery_micro" src="images/team/gustavo.svg" class="img-rounded" alt="gustavo_image">
+        <h4 class="modal-title">Gustavo Blink</h4>
+          <div class="left_text_modal"><i class="fa fa-phone-square" aria-hidden="true"> +66 99 22 88 44</i>
+          </div>        
+       <div class="left_text_modal"><i class="fa fa-envelope" aria-hidden="true"> gustavo.blink@blucrystal.com</i>
+         </div>        
       </div>
-      <div class="modal-body">
-        <p>She knows accounting.</p>
+      <div class="modal-body_micro">
+        <p>He knows the business model. He is the best in operating the business in a specific marketplace.</p>
       </div>
     </div>
   </div>
@@ -245,30 +281,10 @@
 </div> 
 </div>
 
-          <div class="col-md-4">
-            <h2>Gustavo Blink</Map></h2>
-            <p>Sales Director</p>
-            <embed class = "team_gallery" src="images/team/gustavo.svg" alt="gustavo_image"/>
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Read bio</button>
-            <div class="container_modal"> 
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Gustavo Blink</h4>
-      </div>
-      <div class="modal-body">
-        <p>He knows the business model</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div> 
-</div>
 </div>
     <footer class="container">
-      <p>&copy; Blu Crystal Company 2017</p>
+    <div>  <p>&copy; Blu Crystal Company 2018</p>
+  </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>

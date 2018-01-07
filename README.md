@@ -10,7 +10,7 @@ Created with:
 
 * HTML5
 
-* CSS3
+* Sass
 
 * Bootstrap
 

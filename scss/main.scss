@@ -1,21 +1,37 @@
 $app-color: (
-      primary: black,
-      secondary: gray,
-      neutral: #343a40,
+  primary: black,
+  secondary: gray,
+  neutral: #343a40,
 noColor: white,
-required: green,
-darkGray: #777,
-lightGray: #f7f7f7
+darkinGray: #777,
+lightinGray: #f7f7f7,
+whitinSmoke: whitesmoke,
+darCyan: darkcyan,
+blu: blue,
+darkBlu: darkblue,
+navbarBackground: rgba(75, 75, 85, 0.885),
+navbarBottom: rgba(68, 50, 50, 0.581),
+linksColors: #050542,
+jumboColor: rgb(11, 68, 90),
+darSlGrey: darkslategray,
 );
 body {
 padding-top: 3.5rem;
-  }
+background-image: url("../images/main/smok.jpg");
+color:  map-get($app-color, whitinSmoke);
+font-weight: bold;
+background-size: cover;
+}
 .navbar-fixed-top{
 height: 80px;
-background-color: map-get($app-color, darkGray);
+background-color: map-get($app-color, navbarBackground);
+border-bottom: 1px solid map-get($app-color, navbarBottom);
+}
+#about_links, #services_links, #portfolio_links, #pricing_links, #contact_links{
+  color: map-get($app-color, linksColors);
 }
 .logoImg{
-  max-width: 40%;
+max-width: 40%;
 display: block;
 }
 .navbar-brand{
@@ -28,54 +44,114 @@ margin-left: 20px;
 font-family: "Roboto", sans-serif;
 font-weight: 900;
 }
+.container h2{
+  text-align: center;
+}
 .team_gallery {
-height: 229px;
-width: 220px;
-border-radius: 10px;
+  height: auto;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.team_gallery_micro {
+  height: auto;
+  width: 30%;
+  border-radius: 0.8rem;
+  float: left;
+}
+#portfolio{
+  margin-top: 3rem;
+}
+.col-sm-4{
+  color:  map-get($app-color, primary);
+}
+.col-md-4{
+  background-color: #05054238;
+  border: 1px solid map-get($app-color, darSlGrey);
+  padding-left: 0.8rem;
+  width: 25%;
+  margin-left: 8rem;
+  border-radius: 3%;
+  text-align: center;
+  color: map-get($app-color, whitinSmoke);
+}
+.left_text_modal{
+  color:  map-get($app-color, primary);
+text-align: left;
+margin: 10px 0 0 10px;
+}
+.btn-secondary{
+  color: map-get($app-color, primary);
+}
+.modal-content{
+  color: map-get($app-color, primary);
+}
+.modal-body_micro{
+  font-weight: normal;
+  text-align: justify;
+  text-justify: inter-word;
+margin: 0 8px 0 8px;
+}
+.modal-title{
+  text-decoration: underline;
+  font-size: 2rem; 
+}
+.modal-sm{
+  width: 400px;
+}
+a {
+  color: map-get($app-color, primary);
+  text-decoration: none;
+}
+.btn-secondary{
+  border: 2px solid map-get($app-color, darSlGrey);
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
 }
 .jumbotron {
-background-color: lightgrey;
-color: black;
-padding: 50px 25px;
-font-family: Montserrat, sans-serif;
-}
-.input-group{ 
-width: 40%;
-float: right;
+  background-color: map-get($app-color, navbarBottom);
+  color: map-get($app-color, jumboColor);
+  padding: 50px 25px;
+  font-family: Montserrat, sans-serif;
+  }
+.input-group{
+  width: 40%;
+  float: right;
 }
 .btn-subscribe{
-color: black;
-background-color: darkcyan;
+  color: map-get($app-color, primary);
+  background-color: map-get($app-color, darCyan);
 }
-.carousel-control
-.right, .carousel-control.left {
-background-image: none;
-color: blue;
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: map-get($app-color, blu);
 }
-.carousel-indicators li { 
-border-color: blue;
-}
-.carousel-indicators li.active { 
-background-color: map-get($app-color, secondary);
+.carousel-indicators li {
+  border-color: map-get($app-color, blu);
+&.active {
+  background-color: map-get($app-color, blu);
+};
 }
 .carousel-caption{
-color: black;
+color: map-get($app-color, primary);
 font-weight: bold;
-border: 1px solid map-get($app-color, secondary);
+border: 1px solid map-get($app-color, darkBlu);
 background-color: map-get($app-color, noColor);
 border-radius: 5%;
 width: 30%;
 margin: auto;
 }
-.carousel-inner{ 
-width: auto; 
-height: 200px;
+.carousel-inner{
+  width: auto;
+  height: 200px;
 }
 [class*="devicon"] {
-  font-size: 6rem; 
-font-color: map-get($app-color, secondary);
-}
+  font-size: 6rem;
+  font-color: map-get($app-color, darkBlu);
+  }
 .cdraw{
- width: 6rem;
-height: 6rem;
+  width: 6rem;
+  height: 6rem;
+}
+footer{
+  margin-top: 1.5rem;
 }

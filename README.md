@@ -2,7 +2,7 @@
 
 Features:
 
-* Vector graphics that I've made using Corel Draw
+* Vector graphics that I've made using Corel Draw (includes Breaking Bad's characters, Predator and Banksy's graphics)
 
 * Responsive, friendly to many devices
 
